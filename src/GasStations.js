@@ -130,7 +130,7 @@ function GasStations() {
 
                 </Flex>
 
-                <button type="button" className="btn btn-secondary btn-sm" onClick={api_B}>Tankstellen finden</button>
+                <button style={{margin: 6}} type="button" className="btn btn-secondary btn-sm" onClick={api_B}>Tankstellen finden</button>
 
 
                 {apiB.map(element =>
