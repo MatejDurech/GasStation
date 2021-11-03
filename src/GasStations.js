@@ -79,6 +79,7 @@ function GasStations() {
     async function api_A () {
         axios.get('https://api.e-control.at/sprit/1.0/regions/units')
             .then(function (response) {
+                console.log(response)
                 let result = response.data.filter( (item) => item.b[0].g.length !== 0 )
                 let lng = result[0].b[0].g[0].l;
                 let lat = result[0].b[0].g[0].b;
